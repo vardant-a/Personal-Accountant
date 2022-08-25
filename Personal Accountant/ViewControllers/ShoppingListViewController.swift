@@ -9,7 +9,7 @@ import UIKit
 
 final class ShoppingListViewController: UIViewController {
     
-    private var searchController = UISearchController(searchResultsController: nil)
+    private let viewContext = StorageManager.shared.persistentContainer.viewContext
     
     private var tableView: UITableView = {
         let tableView = UITableView()
@@ -17,11 +17,12 @@ final class ShoppingListViewController: UIViewController {
         return tableView
     }()
     
-    private let tableViewCell = ShoppingListCell()
+    private var shoppingList: [Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addingSubviews(searchController.searchBar, tableView)
+        view.backgroundColor = .white
+        addingSubviews(tableView)
         setupConstraints()
     }
 }
@@ -33,12 +34,14 @@ extension ShoppingListViewController: UITableViewDelegate {
 extension ShoppingListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let shoppingElement = shoppingList[indexPath.row]
         cell.textLabel?.text = "1"
+        cell.backgroundColor = .white
         return cell
     }
     
@@ -51,11 +54,12 @@ extension ShoppingListViewController {
     }
     
     private func setupConstraints() {
-        searchController.searchBar.translatesAutoresizingMaskIntoConstraints = false
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
-            searchController.searchBar.topAnchor.constraint(equalTo: view.topAnchor, constant: 116),
-            searchController.searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            searchController.searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+            tableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
 }

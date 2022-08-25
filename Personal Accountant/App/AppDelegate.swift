@@ -37,5 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func saveContext() {
         StorageManager.shared.saveContext()
     }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        StorageManager.shared.saveContext()
+    }
 }
 

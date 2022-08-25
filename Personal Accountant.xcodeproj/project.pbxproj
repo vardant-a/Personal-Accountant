@@ -109,11 +109,11 @@
 		0E667CBB28B6484D00ABEC80 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0E667CC728B65EB500ABEC80 /* XZ */,
 				0E667CC028B64DE300ABEC80 /* Views */,
 				0E667CA528B6477400ABEC80 /* MainViewController.swift */,
 				0E667CBE28B64CB500ABEC80 /* ShoppingListViewController.swift */,
 				0E667CC528B6595700ABEC80 /* ProfileViewController.swift */,
+				0E667CC728B65EB500ABEC80 /* Extensions */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -128,12 +128,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0E667CC728B65EB500ABEC80 /* XZ */ = {
+		0E667CC728B65EB500ABEC80 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0E667CC828B65ED300ABEC80 /* EUColorExtension.swift */,
 			);
-			path = XZ;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

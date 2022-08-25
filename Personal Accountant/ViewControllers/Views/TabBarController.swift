@@ -40,6 +40,10 @@ class TabBarController: UITabBarController {
     
     private func setTabBarAppearance() {
         let roundLayer = CAShapeLayer()
+        let bezierPath = UIBezierPath(
+            roundedRect: CGRect(x: 10, y: 14, width: 300, height: 100),
+            cornerRadius: 0)
+        roundLayer.path = bezierPath.cgPath
         roundLayer.fillColor = UIColor.maintWhite.cgColor
         tabBar.tintColor = .tabBarItemAccent
         tabBar.unselectedItemTintColor = .tabBarItemNoAccent
