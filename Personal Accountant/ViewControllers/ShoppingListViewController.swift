@@ -40,12 +40,9 @@ extension ShoppingListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let shoppingElement = shoppingList[indexPath.row]
-        cell.textLabel?.text = "1"
-        cell.backgroundColor = .white
+        cell.textLabel?.text = shoppingElement.title
         return cell
     }
-    
-    
 }
 
 extension ShoppingListViewController {
