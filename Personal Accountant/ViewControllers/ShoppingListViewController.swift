@@ -28,7 +28,24 @@ final class ShoppingListViewController: UIViewController {
 }
 
 extension ShoppingListViewController: UITableViewDelegate {
+    private func showAlert(title: String?, message: String?) {
+        let alert = UIAlertController(
+            title: "",
+            message: "",
+            preferredStyle: .alert
+        )
+        
+        present(alert, animated: true)
+    }
     
+    private func showDeleteAlert() {
+        let alert = UIAlertController(title: "test", message: "Что сделать?", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { _ in
+            1
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(alert, animated: true)
+    }
 }
 
 extension ShoppingListViewController: UITableViewDataSource {
@@ -59,12 +76,4 @@ extension ShoppingListViewController {
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
-}
-
-extension ShoppingListViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        
-    }
-    
-
 }
