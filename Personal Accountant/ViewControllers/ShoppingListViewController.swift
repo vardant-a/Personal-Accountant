@@ -13,7 +13,6 @@ final class ShoppingListViewController: UIViewController {
     
     private var tableView: UITableView = {
         let tableView = UITableView()
-//        tableView.register(ShoppingListCell.self, forCellReuseIdentifier: tableViewCell.cellID)
         return tableView
     }()
     
@@ -21,9 +20,10 @@ final class ShoppingListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         addingSubviews(tableView)
         setupConstraints()
+        print(shoppingList)
     }
 }
 
@@ -51,7 +51,7 @@ extension ShoppingListViewController: UITableViewDelegate {
 extension ShoppingListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
