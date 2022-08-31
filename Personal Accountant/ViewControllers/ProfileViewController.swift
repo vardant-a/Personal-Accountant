@@ -17,15 +17,15 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .systemGray
         setupNavigationBar()
     }
     
     private func setupNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
-        
+        title = "Profile"
         let navBarAppearance = UINavigationBarAppearance()
-        navBarAppearance.backgroundColor = .darkGray
+        navBarAppearance.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
@@ -38,7 +38,7 @@ class ProfileViewController: UIViewController {
             target: self,
             action: #selector(didTapAddTask)
         )
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
     }
     
     @objc private func didTapAddTask() {

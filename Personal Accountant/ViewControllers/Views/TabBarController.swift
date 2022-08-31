@@ -11,24 +11,31 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         generateTabBar()
         setTabBarAppearance()
     }
     
     private func generateTabBar() {
         viewControllers = [
-            generateVC(
+            UINavigationController(
+                rootViewController: generateVC(
                 viewController: MainViewController(),
                 title: "Home",
-                image: UIImage(systemName: "house.fill")),
-            generateVC(
+                image: UIImage(systemName: "house.fill"))
+                ),
+            UINavigationController(
+                rootViewController: generateVC(
                 viewController: ShoppingListViewController(),
                 title: "Shoping List",
-                image: UIImage(systemName: "list.bullet.rectangle.fill")),
-            generateVC(
+                image: UIImage(systemName: "list.bullet.rectangle.fill"))
+                ),
+            UINavigationController(
+                rootViewController: generateVC(
                 viewController: ProfileViewController(),
                 title: "Profile",
                 image: UIImage(systemName: "person.fill"))
+                )
         ]
     }
     

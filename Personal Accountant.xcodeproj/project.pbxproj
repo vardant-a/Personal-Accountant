@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E59BCB528BFEF5300C9BFE2 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59BCB428BFEF5300C9BFE2 /* TestVC.swift */; };
 		0E667CA228B6477400ABEC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CA128B6477400ABEC80 /* AppDelegate.swift */; };
 		0E667CA428B6477400ABEC80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CA328B6477400ABEC80 /* SceneDelegate.swift */; };
 		0E667CA628B6477400ABEC80 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CA528B6477400ABEC80 /* MainViewController.swift */; };
@@ -19,10 +20,10 @@
 		0E667CC428B6572400ABEC80 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CC328B6572400ABEC80 /* TabBarController.swift */; };
 		0E667CC628B6595700ABEC80 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CC528B6595700ABEC80 /* ProfileViewController.swift */; };
 		0E667CC928B65ED300ABEC80 /* EUColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CC828B65ED300ABEC80 /* EUColorExtension.swift */; };
-		0E667CCB28B6636600ABEC80 /* NavigationBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E667CCA28B6636600ABEC80 /* NavigationBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E59BCB428BFEF5300C9BFE2 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		0E667C9E28B6477400ABEC80 /* Personal Accountant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Personal Accountant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E667CA128B6477400ABEC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E667CA328B6477400ABEC80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		0E667CC328B6572400ABEC80 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		0E667CC528B6595700ABEC80 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0E667CC828B65ED300ABEC80 /* EUColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EUColorExtension.swift; sourceTree = "<group>"; };
-		0E667CCA28B6636600ABEC80 /* NavigationBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +114,7 @@
 				0E667CBE28B64CB500ABEC80 /* ShoppingListViewController.swift */,
 				0E667CC528B6595700ABEC80 /* ProfileViewController.swift */,
 				0E667CC728B65EB500ABEC80 /* Extensions */,
+				0E59BCB428BFEF5300C9BFE2 /* TestVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -121,7 +122,6 @@
 		0E667CC028B64DE300ABEC80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0E667CCA28B6636600ABEC80 /* NavigationBarController.swift */,
 				0E667CC328B6572400ABEC80 /* TabBarController.swift */,
 				0E667CC128B64DFC00ABEC80 /* ShoppingListCell.swift */,
 			);
@@ -210,8 +210,8 @@
 				0E667CC428B6572400ABEC80 /* TabBarController.swift in Sources */,
 				0E667CA628B6477400ABEC80 /* MainViewController.swift in Sources */,
 				0E667CC928B65ED300ABEC80 /* EUColorExtension.swift in Sources */,
+				0E59BCB528BFEF5300C9BFE2 /* TestVC.swift in Sources */,
 				0E667CA228B6477400ABEC80 /* AppDelegate.swift in Sources */,
-				0E667CCB28B6636600ABEC80 /* NavigationBarController.swift in Sources */,
 				0E667CBD28B648AA00ABEC80 /* StorageManager.swift in Sources */,
 				0E667CBF28B64CB500ABEC80 /* ShoppingListViewController.swift in Sources */,
 				0E667CAC28B6477400ABEC80 /* Personal_Accountant.xcdatamodeld in Sources */,
