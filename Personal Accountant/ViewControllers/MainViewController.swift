@@ -7,13 +7,8 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
     
-    private var navigationBar: UINavigationController = {
-       let navigationController = UINavigationController()
-        navigationController.title = "1"
-        return navigationController
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
